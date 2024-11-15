@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #3A4663;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .calc {
+  width: 100%;
+  max-width: 540px;
+}
+
+.wrapper .calc .calc-header {
+  width: 100%;
+  max-width: 533px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 32px;
+}
+
+.wrapper .calc .calc-header .logo {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .calc .calc-header .calc-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 26px;
+}
+
+.wrapper .calc .calc-header .calc-theme h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.wrapper .calc .calc-header .calc-theme .calc-theme-btn {
+  width: 71px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .calc .calc-header .calc-theme .calc-theme-btn .number-theme {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper .calc .calc-header .calc-theme .calc-theme-btn .number-theme p {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .calc .calc-header .calc-theme .calc-theme-btn .rect {
+  border-radius: 13px;
+  width: 71px;
+  height: 26px;
+  background: #242d44;
+  padding: 5px;
+}
+
+.wrapper .calc .calc-header .calc-theme .calc-theme-btn .rect .pushshing-btn {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 100%;
+  background: #d03f2f;
+}
+
+.wrapper .calc .calc-body .display {
+  width: 540px;
+  height: 128px;
+  background: #181f33;
+  border-radius: 10px;
+  border:none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 32px 0 32px;
+  margin-bottom: 24px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: #fff;
+}
+
+.wrapper .calc .calc-body .calc-buttons {
+  width: 540px;
+  height: 480px;
+  background: #242d44;
+  border-radius: 10px;
+  padding: 32px 32px 32px 30px;
+  display: grid;
+  grid-template-columns: 101px 101px 101px 101px;
+  grid-auto-rows: 64px;
+  grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dott zeroo slash incrementt" "reset reset equal equal";
+  gap: 24px 25px;
+}
+
+.wrapper .calc .calc-body .calc-buttons .item {
+  background: #eae3dc;
+  border-radius: 10px;
+  box-shadow: inset 0 -4px 0 0 #b3a497;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #434a59;
+  cursor: pointer;
+  user-select: none;
+  border:none;
+}
+.wrapper .calc .calc-body .calc-buttons .item:hover{
+  background: #eae3dcba;
+  box-shadow: inset 0 -4px 0 0 #b3a497c5;
+  color: #434a59;
+}
+
+.wrapper .calc .calc-body .calc-buttons .item:active{
+  background: #d5c4b2ba;
+  box-shadow: inset 0 -4px 0 0 #c2ad9ac5;
+  color: #434a59;
+}
+
+.wrapper .calc .calc-body .calc-buttons .seven {
+  grid-area: seven;
+}
+
+.wrapper .calc .calc-body .calc-buttons .eight {
+  grid-area: eight;
+}
+
+.wrapper .calc .calc-body .calc-buttons .nine {
+  grid-area: nine;
+}
+
+.wrapper .calc .calc-body .calc-buttons .del {
+  grid-area: del;
+  box-shadow: inset 0 -4px 0 0 #414e73;
+  background: #647198;
+  color: #fff;
+}
+.wrapper .calc .calc-body .calc-buttons .del:hover {
+  box-shadow: inset 0 -4px 0 0 #414e73b8;
+  background: #647198c4;
+}
+
+.wrapper .calc .calc-body .calc-buttons .del:active {
+  box-shadow: inset 0 -4px 0 0 #4c619bbb;
+  background: #5a6fadbc;
+}
+
+.wrapper .calc .calc-body .calc-buttons .four {
+  grid-area: four;
+}
+
+.wrapper .calc .calc-body .calc-buttons .five {
+  grid-area: five;
+}
+
+.wrapper .calc .calc-body .calc-buttons .six {
+  grid-area: six;
+}
+
+.wrapper .calc .calc-body .calc-buttons .plus {
+  grid-area: plus;
+}
+
+.wrapper .calc .calc-body .calc-buttons .one {
+  grid-area: one;
+}
+
+.wrapper .calc .calc-body .calc-buttons .two {
+  grid-area: two;
+}
+
+.wrapper .calc .calc-body .calc-buttons .three {
+  grid-area: three;
+}
+
+.wrapper .calc .calc-body .calc-buttons .minus {
+  grid-area: minus;
+}
+
+.wrapper .calc .calc-body .calc-buttons .dot {
+  grid-area: dott;
+}
+
+.wrapper .calc .calc-body .calc-buttons .zero {
+  grid-area: zeroo;
+}
+
+.wrapper .calc .calc-body .calc-buttons .slash {
+  grid-area: slash;
+}
+
+.wrapper .calc .calc-body .calc-buttons .increment {
+  grid-area: incrementt;
+}
+
+.wrapper .calc .calc-body .calc-buttons .reset {
+  grid-area: reset;
+  box-shadow: inset 0 -4px 0 0 #414e73;
+  background: #647198;
+  color: #fff;
+}
+
+.wrapper .calc .calc-body .calc-buttons .reset:hover {
+  box-shadow: inset 0 -4px 0 0 #414e73bb;
+  background: #647198bc;
+}
+
+.wrapper .calc .calc-body .calc-buttons .reset:active {
+  box-shadow: inset 0 -4px 0 0 #4c619bbb;
+  background: #5a6fadbc;
+}
+
+.wrapper .calc .calc-body .calc-buttons .equal {
+  grid-area: equal;
+  box-shadow: inset 0 -4px 0 0 #93261a;
+  background: #d03f2f;
+  color: #fff;
+}
+
+.wrapper .calc .calc-body .calc-buttons .equal:hover {
+  box-shadow: inset 0 -4px 0 0 #93261ac2;
+  background: #d03f2fc4;
+}
+
+.wrapper .calc .calc-body .calc-buttons .equal:active {
+  box-shadow: inset 0 -4px 0 0 #bd2a1ac2;
+  background: #cb2d1bc4;
+}
